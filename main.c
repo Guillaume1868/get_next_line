@@ -27,6 +27,8 @@ int	main(int argc, char **argv)
 		fd2 = open(argv[2], O_RDONLY);
 		line = get_next_line(fd);
 		line2 = get_next_line(fd2);
+		printf("Opened %s at %d\n", argv[1], fd);
+		printf("Opened %s at %d\n", argv[2], fd2);
 		while (line > 0)
 		{
 			printf("%s", line);
