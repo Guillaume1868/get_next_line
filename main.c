@@ -8,7 +8,6 @@ int	main(int argc, char **argv)
 	char	*line;
 	char	*line2;
 
-	printf("buf: %d\n", BUFFER_SIZE);
 	line = NULL;
 	if (argc == 2)
 	{
