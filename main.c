@@ -6,6 +6,7 @@ int	main(int argc, char **argv)
 	int		fd;
 	char	*line;
 
+	printf("buf: %d\n", BUFFER_SIZE);
 	line = NULL;
 	if (argc == 2)
 	{
