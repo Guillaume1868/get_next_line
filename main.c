@@ -9,8 +9,22 @@ int	main(int argc, char **argv)
 	char	*line2;
 
 	line = NULL;
+	if (argc == 1)
+	{
+		fd = 0;
+		line = get_next_line(fd);
+		//printf("read line:|%s|\n", line);
+		while (line > 0)
+		{
+			printf("%s", line);
+			//printf("printed");
+			free(line);
+			line = get_next_line(fd);
+		}
+	}
 	if (argc == 2)
 	{
+		printf("BUFFER_SIZE:%d\n", BUFFER_SIZE);
 		fd = open(argv[1], O_RDONLY);
 		line = get_next_line(fd);
 		while (line > 0)
@@ -44,7 +58,5 @@ int	main(int argc, char **argv)
 		close(fd);
 		close(fd2);
 	}
-	else
-		printf("\n");
 	return (0);
 }

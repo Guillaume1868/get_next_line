@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gaubert <gaubert@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/19 15:34:55 by gaubert           #+#    #+#             */
+/*   Updated: 2021/10/19 18:37:52 by gaubert          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line_bonus.h"
 #include <stdio.h>
 
@@ -46,7 +58,7 @@ char	*ft_get_line(char *stat)
 	}
 	if (stat[i] == '\n')
 	{
-		new_line[i] = stat[i];
+		new_line[i] = '\n';
 		i++;
 	}
 	new_line[i] = '\0';
@@ -55,10 +67,10 @@ char	*ft_get_line(char *stat)
 
 // Return NULL if stat is NULL
 // Free stat if it doesnt contain a \n and return NULL
-// If it does contain a \n, Allocate a new string containing 
+// If it does contain a \n, Allocate a new string containing
 //    everything between the \n and \0 and free the static var
 //    so the parent fct can set static var address to the new one
-// Return 
+// Return
 char	*ft_get_start(char *stat)
 {
 	int		i;
