@@ -6,7 +6,7 @@
 /*   By: gaubert <gaubert@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 15:34:55 by gaubert           #+#    #+#             */
-/*   Updated: 2021/10/19 18:37:52 by gaubert          ###   ########.fr       */
+/*   Updated: 2021/10/21 16:48:36 by gaubert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ char	*get_next_line(int fd)
 	read_return = 1;
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	buff = malloc(sizeof(char) * (BUFFER_SIZE + 1));
+	buff = malloc(sizeof(char) * ((unsigned long) BUFFER_SIZE + 1));
 	if (!buff)
 		return (NULL);
 	while (!contains_nl(stat[fd]) && read_return != 0)
