@@ -6,8 +6,13 @@ This project is a function used to read a file line by line. Every time you call
 
 See the pdf to know what was my instructions
 
+## build
+
+There is no makefile provided because not asked by the subject. You can simply add this "library" in your source code instead of linking it as a compiled file
+
 ## final grade
 
 112/100
 
 Evaluators gave me 125% but moulinette 100%
+
