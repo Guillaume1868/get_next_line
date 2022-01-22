@@ -13,7 +13,6 @@ int	main(int argc, char **argv)
 	{
 		fd = 0;
 		line = get_next_line(fd);
-		//printf("read line:|%s|\n", line);
 		while (line > 0)
 		{
 			printf("%s", line);
