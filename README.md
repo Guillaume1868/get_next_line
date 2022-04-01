@@ -1,6 +1,6 @@
 # get_next_line
 [![42 Project Score](https://42-project-badge.glitch.me/users/gaubert/project/get_next_line)](https://github.com/ricardoreves/42-project-badge)
-![norminette](https://github.com/Guillaume1868/get_next_line/workflows/main/badge.svg)
+![norminette](https://github.com/Guillaume1868/get_next_line/workflows/norminette.yml/badge.svg)
 
 This project is a function used to read a file line by line. Every time you call this function, it will return you a pointer to a line allocated in memory. Every next time you call it, it will return the next line.
 
